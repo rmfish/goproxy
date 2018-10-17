@@ -13,14 +13,14 @@ A global proxy for go modules. see: [https://goproxy.io](https://goproxy.io)
 
 ## Docker
 
-    `docker run -it 117sport/goproxy`
+    docker run -it 117sport/goproxy
 
-    mapping module dir(change go_repo to your own dir):
+Use the -v flag to persisting the proxy module data (change ___go_repo___ to your own dir):
 
-    `docker run -it -v go_repo:/go/pkg/mod/cache/download 117sport/goproxy`
+    docker run -it -v go_repo:/go/pkg/mod/cache/download 117sport/goproxy
 
 ## Docker Compose
 
-    `docker-compose up`
+    docker-compose up
 
 
