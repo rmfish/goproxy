@@ -2,7 +2,7 @@ version: "3"
 services:
 
   goproxy:
-    image: goproxy:latest
+    image: 117sport/goproxy:latest
     ports:
     - "8080"
     restart: always

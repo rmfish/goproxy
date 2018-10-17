@@ -10,3 +10,17 @@ A global proxy for go modules. see: [https://goproxy.io](https://goproxy.io)
 ## Started
     
     ./goproxy -listen=0.0.0.0:80
+
+## Docker
+
+    `docker run -it 117sport/goproxy`
+
+    mapping module dir(change go_repo to your own dir):
+
+    `docker run -it -v go_repo:/go/pkg/mod/cache/download 117sport/goproxy`
+
+## Docker Compose
+
+    `docker-compose up`
+
+
