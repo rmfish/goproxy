@@ -7,4 +7,7 @@ services:
     - "8080"
     restart: always
     volumes:
-      - ./go_repos:/go/pkg/mod/cache/download
+      - ./repos:/go/pkg/mod/cache/download
+    environment:
+      SERVICE_NAME: goproxy
+      SERVICE_TAGS: ha,public,anonym
